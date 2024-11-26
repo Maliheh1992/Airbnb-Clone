@@ -3,7 +3,7 @@ import useUrlLocation from "../../hooks/useUrlLocation";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
-import Loader from "../Loader/Loader";
+import Loader from "../Loader";
 import ReactCountryFlag from "react-country-flag";
 import { useBookmark } from "../context/BookmarkListContext";
 import { Button } from "@/components/ui/button";

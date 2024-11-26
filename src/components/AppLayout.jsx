@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Map from "../Map/Map";
+import Map from "../Map";
 import { useHotels } from "../context/HotelsProvider";
 
 function AppLayout() {

@@ -1,7 +1,7 @@
 import React from "react";
 import { categoryItem } from "../../../server/categoryItem";
 import { Link } from "react-router-dom";
-import CategoryBox from "./CategoryBox";
+import CategoryBox from "../CategoryBox";
 
 function MapFilter() {
   return (

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useHotels } from "../context/HotelsProvider";
+import { useHotels } from "./context/HotelsProvider";
 import {
   MapContainer,
   Marker,
@@ -9,8 +9,8 @@ import {
   useMapEvent,
 } from "react-leaflet";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import useGeoLocation from "../../hooks/useGeoLocation";
-import useUrlLocation from "../../hooks/useUrlLocation";
+import useGeoLocation from "../hooks/useGeoLocation";
+import useUrlLocation from "../hooks/useUrlLocation";
 import { Button } from "@/components/ui/button";
 function Map({ markerLocations }) {
   // const { hotels } = useHotels();
@@ -35,14 +35,14 @@ function Map({ markerLocations }) {
   return (
     <div className="">
       <MapContainer
-       className="w-[100%] h-[80vh] rounded-xl border-2 relative"
+        className="w-[100%] h-[80vh] rounded-xl border-2 relative"
         center={mapCenter}
         zoom={13}
         scrollWheelZoom={true}
       >
         <ChangeCenter position={mapCenter} />
         <DetectClick />
-        
+
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
