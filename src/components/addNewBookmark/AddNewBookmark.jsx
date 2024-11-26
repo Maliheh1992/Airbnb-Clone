@@ -3,7 +3,7 @@ import useUrlLocation from "../../hooks/useUrlLocation";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
-import Loader from "../Loader";
+import Loader from "../loader/Loader";
 import ReactCountryFlag from "react-country-flag";
 import { useBookmark } from "../context/BookmarkListContext";
 import { Button } from "@/components/ui/button";
@@ -66,10 +66,19 @@ function AddNewBookmark() {
 
   return (
     <div className="">
-      <h2 className="font-bold text-2xl my-4 text-center" >AddNewBookmark</h2>
-      <form action="" className="relative max-w-md mx-auto" onSubmit={handleSubmit}>
+      <h2 className="font-bold text-2xl my-4 text-center">AddNewBookmark</h2>
+      <form
+        action=""
+        className="relative max-w-md mx-auto"
+        onSubmit={handleSubmit}
+      >
         <div className="mb-5">
-          <label htmlFor="cityName" className="block mb-2 text-sm font-medium text-gray-900">City Name</label>
+          <label
+            htmlFor="cityName"
+            className="block mb-2 text-sm font-medium text-gray-900"
+          >
+            City Name
+          </label>
           <input
             value={cityName}
             onChange={(e) => setCityName(e.target.value)}
@@ -80,16 +89,26 @@ function AddNewBookmark() {
           />
         </div>
         <div className="mb-5">
-          <label htmlFor="countyName" className="block mb-2 text-sm font-medium text-gray-900"> Country Name </label>
+          <label
+            htmlFor="countyName"
+            className="block mb-2 text-sm font-medium text-gray-900"
+          >
+            {" "}
+            Country Name{" "}
+          </label>
           <input
             value={county}
             onChange={(e) => setCountry(e.target.value)}
             type="text"
             name="countyName"
             id="countyName"
-             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
           />
-          <ReactCountryFlag className="absolute right-4 top-[60%]" svg countryCode={countryCode} />
+          <ReactCountryFlag
+            className="absolute right-4 top-[60%]"
+            svg
+            countryCode={countryCode}
+          />
         </div>
         <div className="flex items-center justify-between">
           <Button
@@ -97,11 +116,10 @@ function AddNewBookmark() {
               e.preventDefault();
               navigate(-1);
             }}
-           
           >
             &larr;
           </Button>
-          <Button >Add</Button>
+          <Button>Add</Button>
         </div>
       </form>
     </div>

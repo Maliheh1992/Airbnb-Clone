@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
 
-import Loader from "../Loader/Loader";
+import Loader from "../loader/Loader";
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 import { useBookmark } from "../context/BookmarkListContext";
@@ -17,9 +17,7 @@ function SingleBookmark() {
   if (isLoading || !currentBookmark) return <Loader />;
   return (
     <div>
-      <Button onClick={() => navigate(-1)} >
-        &larr; Back
-      </Button>
+      <Button onClick={() => navigate(-1)}>&larr; Back</Button>
       <h2 className="font-bold text-2xl my-4">{currentBookmark.cityName}</h2>
       <div className="` border rounded-xl p-4 border-gray-200 flex  items-center  justify-between shadow-md">
         <ReactCountryFlag svg countryCode={currentBookmark.countryCode} />

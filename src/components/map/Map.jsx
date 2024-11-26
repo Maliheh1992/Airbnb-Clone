@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useHotels } from "./context/HotelsProvider";
+
 import {
   MapContainer,
   Marker,
@@ -9,8 +9,8 @@ import {
   useMapEvent,
 } from "react-leaflet";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import useGeoLocation from "../hooks/useGeoLocation";
-import useUrlLocation from "../hooks/useUrlLocation";
+import useGeoLocation from "../../hooks/useGeoLocation";
+import useUrlLocation from "../../hooks/useUrlLocation";
 import { Button } from "@/components/ui/button";
 function Map({ markerLocations }) {
   // const { hotels } = useHotels();

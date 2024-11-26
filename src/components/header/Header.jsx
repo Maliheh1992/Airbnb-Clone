@@ -1,7 +1,7 @@
 import { MdLocationOn } from "react-icons/md";
 import { HiCalendar, HiMinus, HiPlus, HiSearch } from "react-icons/hi";
 import { useRef, useState } from "react";
-import useOutSideClick from "../hooks/useOutSideClick";
+
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRange } from "react-date-range";
@@ -14,13 +14,12 @@ import {
   useNavigate,
   useSearchParams,
 } from "react-router-dom";
-import MapFilter from "./header/MapFilter";
-import { useAuth } from "./context/AuthProvider";
+
 
 import { Button } from "@/components/ui/button";
-import UserNav from "./header/UserNav";
+import UserNav from "./UserNav";
 import { DatePicker } from "./DatePicker";
-import { GuestOptions } from "./guestOptions";
+import { GuestOptions } from "./GuestOptions";
 
 function Header() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -144,7 +143,7 @@ function Header() {
           <UserNav />
         </div>
       </div>
-      {/* <MapFilter /> */}
+  
     </div>
   );
 }

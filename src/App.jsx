@@ -1,20 +1,21 @@
 import { Toaster } from "react-hot-toast";
 import "./App.css";
-import Header from "./components/Header";
-import LocationList from "./components/LocationList";
+import Header from "./components/header/Header";
+import LocationList from "./components/locationList/LocationList";
 import { Route, Routes } from "react-router-dom";
-import AppLayout from "./components/AppLayout";
-import Hotels from "./components/Hotels";
+import AppLayout from "./components/appLayout/AppLayout";
+import Hotels from "./components/hotels/Hotels";
 import HotelsProvider from "./components/context/HotelsProvider";
-import SingleHotel from "./components/SingleHotel";
-import BookMarkLayout from "./components/BookMarkLayout";
+import SingleHotel from "./components/singleHotel/SingleHotel";
+
 import BookmarkListProvider from "./components/context/BookmarkListContext";
-import SingleBookmark from "./components/SingleBookmark";
-import AddNewBookmark from "./components/AddNewBookmark";
-import BookMark from "./components/Bookmark";
+import SingleBookmark from "./components/singleBookmark/SingleBookmark";
+import AddNewBookmark from "./components/addNewBookmark/AddNewBookmark";
+import BookMark from "./components/bookmark/Bookmark";
 import AuthProvider from "./components/context/AuthProvider";
-import LoginForm from "./components/LoginForm";
-import ProtectedRoute from "./components/ProtectedRoute";
+import LoginForm from "./components/loginForm/LoginForm";
+import ProtectedRoute from "./components/protectedRoute/ProtectedRoute";
+import BookMarkLayout from "./components/bookMarkLayout/BookMarkLayout";
 
 function App() {
   return (

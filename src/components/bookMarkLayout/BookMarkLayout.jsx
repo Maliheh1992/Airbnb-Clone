@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import Map from "../Map/Map";
+import Map from "../map/Map";
 import { useBookmark } from "../context/BookmarkListContext";
 
 function BookMarkLayout() {

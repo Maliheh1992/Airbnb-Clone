@@ -1,5 +1,5 @@
 import { useBookmark } from "../context/BookmarkListContext";
-import Loader from "../Loader/Loader";
+import Loader from "../loader/Loader";
 import { Link } from "react-router-dom";
 import ReactCountryFlag from "react-country-flag";
 import { FaTrashCan } from "react-icons/fa6";
