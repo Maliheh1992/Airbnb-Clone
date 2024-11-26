@@ -9,14 +9,12 @@ import HotelsProvider from "./components/context/HotelsProvider";
 import SingleHotel from "./components/SingleHotel/SingleHotel";
 import BookMarkLayout from "./components/BookMarkLayout/BookMarkLayout";
 import BookmarkListProvider from "./components/context/BookmarkListContext";
-import BookMark from "./components/Bookmark/BookMark";
 import SingleBookmark from "./components/SingleBookmark/SingleBookmark";
 import AddNewBookmark from "./components/AddNewBookmark/AddnewBookmark";
-
+import BookMark from "./components/Bookmark";
 import AuthProvider from "./components/context/AuthProvider";
 import LoginForm from "./components/LoginForm/LoginForm";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
-import MapFilter from "./components/header/MapFilter";
 
 function App() {
   return (
