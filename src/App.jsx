@@ -9,7 +9,7 @@ import HotelsProvider from "./components/context/HotelsProvider";
 import SingleHotel from "./components/SingleHotel/SingleHotel";
 import BookMarkLayout from "./components/BookMarkLayout/BookMarkLayout";
 import BookmarkListProvider from "./components/context/BookmarkListContext";
-import BookMark from "./components/BookMark/BookMark";
+import BookMark from "./components/Bookmark/BookMark";
 import SingleBookmark from "./components/SingleBookmark/SingleBookmark";
 import AddNewBookmark from "./components/AddNewBookmark/AddnewBookmark";
 
