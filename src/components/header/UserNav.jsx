@@ -25,7 +25,7 @@ function UserNav() {
         <div className="rounded-full border px-2 py-2 lg:px-4 flex items-center gap-x-3">
           <MenuIcon className="w-6 h-6 lg:w-5 lg:h-5" />
           <img
-            src="../../../public/image/userName.png"
+            src="/image/userName.png"
             alt="Image of user"
             className="rounded-full h-8 w-8 hidden lg:block"
           />

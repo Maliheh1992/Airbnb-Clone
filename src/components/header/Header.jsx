@@ -67,12 +67,12 @@ function Header() {
         >
           <NavLink to="/">
             <img
-              src="../../../public/image/logo-2.png"
+              src="/image/logo-2.png"
               alt="Desktop Logo"
               className="w-28 hidden lg:block"
             />
             <img
-              src="../../../public/image/logo-mobile.png"
+              src="/image/logo-mobile.png"
               alt="Mobile Logo"
               className="w-8 lg:hidden block "
             />
